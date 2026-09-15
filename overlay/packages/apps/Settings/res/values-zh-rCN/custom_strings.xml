@@ -387,49 +387,92 @@
     <string name="software_update_up_to_date_header">您的 Pixel 已是最新版本</string>
     <string name="software_update_up_to_specific_date_summary">已更新到 %1$s</string>
     <string name="system_update_entry_title">系统更新</string>
+
     <!-- Spoofing -->
-    <string name="spoofing_title">伪装</string>
-    <string name="spoofing_integrity_category">完整性</string>
-    <string name="spoofing_identity_category">设备身份</string>
-    <string name="spoofing_app_specific_category">特定应用覆盖</string>
-    <string name="tricky_store_title">认证</string>
-    <string name="play_integrity_fix_title">Play 完整性修复</string>
-    <string name="spoofing_pixel_props_title">Pixel 属性</string>
-    <string name="spoofing_pixel_props_summary">将选定应用伪装为 Pixel</string>
+    <string name="spoofing_title">伪装设置</string>
+    <string name="spoofing_summary">Play Integrity、设备标识及应用特定伪装</string>
+    <string name="spoofing_integrity_category">完整性 (Integrity)</string>
+    <string name="spoofing_identity_category">设备标识</string>
+    <string name="spoofing_app_specific_category">应用特定伪装</string>
+    <string name="tricky_store_title">认证 (Attestation)</string>
+    <string name="tricky_store_summary">用于认证的 Keybox 及目标应用</string>
+    <string name="play_integrity_fix_title">Play Integrity 修复</string>
+    <string name="play_integrity_fix_summary">向 DroidGuard 提供指纹及构建 (build) 字段信息</string>
+    <string name="spoofing_pixel_props_title">Pixel 属性伪装</string>
+    <string name="spoofing_pixel_props_summary">将选定应用伪装为 Pixel 设备</string>
     <string name="spoofing_photos_title">Google 相册</string>
-    <string name="spoofing_photos_summary">将 Google 相册伪装为 Pixel XL</string>
+    <string name="spoofing_photos_summary">将 Google 相册伪装为 Pixel XL 设备</string>
     <string name="spoofing_reset_defaults_title">恢复默认设置</string>
     <string name="spoofing_reset_defaults_dialog_title">重置伪装设置？</string>
-    <string name="spoofing_reset_defaults_dialog_message">这将清除 Play 完整性配置及安全补丁覆盖，并恢复默认的目标应用列表。Keybox 和开关状态将被保留。</string>
+    <string name="spoofing_reset_defaults_dialog_message">此操作将清除 Play Integrity 配置及安全补丁伪装设置，并将目标应用列表恢复为默认状态。保留 Keybox 及启用开关。</string>
     <string name="spoofing_reset_defaults_confirm">重置</string>
+    <string name="spoofing_reset_defaults_done">伪装设置已重置</string>
+    <string name="pif_no_config">无配置</string>
     <string name="pif_active_model">当前生效：<xliff:g id="model" example="Pixel 6a">%1$s</xliff:g></string>
     <string name="pif_fetch">获取 Pixel 指纹</string>
     <string name="pif_import">导入配置</string>
     <string name="pif_delete">删除配置</string>
     <string name="pif_delete_title">删除配置？</string>
     <string name="pif_delete_message">已保存的指纹将被移除。</string>
+    <string name="pif_imported">配置已导入</string>
+    <string name="pif_fetched_model">已获取 <xliff:g id="model" example="Pixel 6a">%1$s</xliff:g> 的指纹</string>
+    <string name="pif_wipe_playstore_title">清除 Play 商店数据？</string>
+    <string name="pif_wipe_playstore_message">应用此指纹时，若 Play 商店处于全新会话状态，效果最佳。是否立即清除 Play 商店应用数据？此操作将使您退出登录，并清除本地缓存及下载队列。</string>
+    <string name="pif_wipe_confirm">清除数据</string>
+    <string name="pif_failed">失败：<xliff:g id="error" example="timeout">%1$s</xliff:g></string>
+    <string name="pif_invalid_fingerprint">指纹格式无效</string>
+    <string name="pif_no_devices">未找到设备</string>
+    <string name="pif_select_device">选择设备</string>
+    <string name="pif_recommended">推荐</string>
     <string name="pif_advanced">高级伪装</string>
-    <string name="pif_spoof_build_title">伪装 Build 字段</string>
-    <string name="pif_spoof_build_summary">向 DroidGuard 呈现指纹的 Build 字段</string>
+    <string name="pif_spoof_build_title">伪装构建 (Build) 字段</string>
+    <string name="pif_spoof_build_summary">向 DroidGuard 提供指纹中的构建 (Build) 字段信息</string>
     <string name="pif_spoof_props_title">伪装系统属性</string>
-    <string name="pif_spoof_props_summary">向 DroidGuard 呈现指纹的构建 ID、补丁及产品标识</string>
-    <string name="pif_spoof_provider_title">伪装密钥库提供程序</string>
-    <string name="pif_spoof_provider_summary">拒绝 DroidGuard 的证书链请求。使用 Keybox 时请保持关闭</string>
+    <string name="pif_spoof_props_summary">向 DroidGuard 提供指纹中的构建 ID、补丁版本及产品标识信息</string>
+    <string name="pif_spoof_provider_title">伪装密钥库 (Keystore) 提供程序</string>
+    <string name="pif_spoof_provider_summary">使 DroidGuard 的证书链请求失败。若正在使用 Keybox，请勿开启此项</string>
     <string name="pif_spoof_signature_title">伪装 ROM 签名</string>
-    <string name="pif_spoof_signature_summary">向 DroidGuard 呈现实验性签名</string>
+    <string name="pif_spoof_signature_summary">向 DroidGuard 提供实验性签名</string>
     <string name="pif_vending_finger_title">Play 商店指纹</string>
-    <string name="pif_vending_finger_summary">同时向 Play 商店呈现该指纹。如无需要请保持关闭</string>
-    <string name="pif_vending_sdk_title">伪装 Play 商店 SDK</string>
-    <string name="pif_vending_sdk_summary">向 Play 商店呈现 SDK 32。绝不会高于真实 SDK。仅供测试，请保持关闭</string>
+    <string name="pif_vending_finger_summary">同时向 Play 商店提供该指纹信息。除非有需要，否则请保持关闭</string>
+    <string name="pif_vending_finger_custom">自定义 Play 商店指纹：<xliff:g id="fingerprint" example="google/bluejay/...">%1$s</xliff:g></string>
+    <string name="pif_vending_sdk_title">伪造 Play 商店 SDK 版本</string>
+    <string name="pif_vending_sdk_summary">向 Play 商店呈现 SDK 32 版本。请勿将其设置为高于实际 SDK 版本。除非用于测试，否则请保持关闭</string>
     <string name="pif_fields">指纹字段</string>
-    <string name="ts_keybox_user">已导入自定义 Keybox</string>
+    <string name="pif_edit_value">编辑 <xliff:g id="field" example="MODEL">%1$s</xliff:g></string>
+    <string name="pif_value_empty">值不能为空</string>
+    <string name="pif_value_integer">必须为整数</string>
+    <string name="ts_no_keybox">未安装 Keybox</string>
+    <string name="ts_keybox_installed">已安装 Keybox</string>
+    <string name="ts_keybox_user">由您导入的 Keybox</string>
     <string name="ts_import_keybox">导入 Keybox</string>
     <string name="ts_delete_keybox">删除 Keybox</string>
+    <string name="ts_delete_keybox_title">删除 Keybox？</string>
+    <string name="ts_delete_keybox_message">已安装的 Keybox 将被移除。</string>
+    <string name="ts_keybox_imported">Keybox 已导入</string>
+    <string name="ts_wipe_playstore_message">Play 商店会缓存完整性验证结果。是否立即清除其数据，以使新的 Keybox 生效？此操作将使您退出登录，并清除其本地缓存及下载队列。</string>
+    <string name="ts_keybox_deleted">Keybox 已删除</string>
     <string name="ts_targets">目标应用</string>
     <string name="spoof_target_count"><xliff:g id="count" example="8">%1$d</xliff:g> 个应用</string>
     <string name="ts_import_targets">导入目标列表</string>
+    <string name="ts_targets_imported">目标列表已导入</string>
     <string name="ts_patch">安全补丁覆盖</string>
-    <string name="pp_enable">伪装 Pixel 属性</string>
+    <string name="ts_patch_summary_unset">未设置。验证（Attestation）使用设备补丁日期</string>
+    <string name="ts_patch_stale"><xliff:g id="date" example="2024-01-01">%1$s</xliff:g>（已超过一年）</string>
+    <string name="ts_patch_custom">按应用（包）设置补丁日期</string>
+    <string name="ts_patch_invalid">请使用 YYYY-MM-DD 格式、YYYY-MM-05 模板，或按应用（包）进行配置</string>
+    <string name="ts_failed">失败：<xliff:g id="error" example="timeout">%1$s</xliff:g></string>
+    <string name="ts_choose_mode">目标模式</string>
+    <string name="ts_mode_off">未启用</string>
+    <string name="ts_mode_auto">自动</string>
+    <string name="ts_mode_leaf">Leaf 伪装（Leaf hack）</string>
+    <string name="ts_mode_cert">证书生成</string>
+    <string name="ts_mode_skip">跳过</string>
+    <string name="pp_enable">伪装 Pixel 设备属性</string>
     <string name="pp_model">伪装为</string>
     <string name="pp_targets">目标应用</string>
+    <string name="spoof_show_system">显示系统应用</string>
+    <string name="spoof_filter">筛选</string>
+    <string name="spoof_no_apps">未找到匹配的应用</string>
+
 </resources>
