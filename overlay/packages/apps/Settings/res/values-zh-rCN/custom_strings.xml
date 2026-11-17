@@ -475,4 +475,9 @@
     <string name="spoof_filter">筛选</string>
     <string name="spoof_no_apps">未找到匹配的应用</string>
 
+    <!-- Volume dialog position -->
+    <string name="volume_panel_category_title">音量面板</string>
+    <string name="volume_panel_on_left_title">左侧音量面板</string>
+    <string name="volume_panel_on_left_summary">在屏幕左侧显示音量控制面板</string>
+
 </resources>
